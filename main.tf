@@ -1,10 +1,10 @@
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-south-1"
 }
 
 resource "aws_instance" "web" {
   count         = 2
-  ami           = "ami-064519b8c76274859"  # Replace with a valid AMI ID for your region
+  ami           = "ami-03c68e52484d7488f"  # Replace with a valid AMI ID for your region
   instance_type = "t2.micro"
 
   tags = {
